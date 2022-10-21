@@ -190,7 +190,7 @@ header .links a .fa:hover {
 /* #menu1{background-color: red;} */
 #menu2{padding-top: 60px;}
 #menu3{padding-top: 60px;}
-#menu4{padding-top: 60px; background-color: green;}
+#menu4{padding-top: 60px; background-color: red;}
 #menu5{padding-top: 60px; background-color: blueviolet;}
 
 /* Home Styling */
@@ -313,12 +313,13 @@ header .links a .fa:hover {
     font-weight: bold;
     border-radius: 20px;
     letter-spacing: 2px;
-    background-color: blue;
+    background-color: #525151;
 }
 
 @media screen and (max-width: 1200px) {
     #menu2 {
         height: auto;
+        padding-top: 80px;
     }
 
     #menu2 .container .picture {
@@ -395,9 +396,6 @@ header .links a .fa:hover {
 }
 
 @media screen and (max-width: 1200px) {
-    #menu2 {
-        padding-top: 80px;
-    }
     #menu3 {
         height: auto;
         padding-top: 100px;
