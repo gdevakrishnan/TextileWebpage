@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
 * {
@@ -30,7 +29,7 @@ header {
     position: relative;
     position: fixed;
     top: 0;
-    background-color: #ffffff;
+    background-color: #525151;
     z-index: 999;
 }
 
@@ -48,6 +47,7 @@ header nav .logo {
     font-size: 40px;
     cursor: pointer;
     letter-spacing: 2px;
+    color: #ffffff;
 }
 
 header nav ul {
@@ -65,6 +65,7 @@ header nav ul li a {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
+    color: #ffffff;
 }
 
 header nav #check {
@@ -77,6 +78,10 @@ header nav label {
     right: 30px;
     cursor: pointer;
     display: none;
+}
+
+header nav label .fa {
+    color: #ffffff;
 }
 
 header .links {
@@ -93,14 +98,15 @@ header .links {
 header .links a .fa {
     font-size: 20px;
     padding: 5px;
+    color: #ffffff;
 }
 
 header nav ul li.active, header nav ul li:hover {
-    border-bottom: 4px solid rgb(85, 84, 84);
+    border-bottom: 4px solid rgb(255, 255, 255);
 }
 
 header .links a .fa:hover {
-    color: rgb(189, 189, 189);
+    color: rgb(206, 203, 203);
 }
 
 @media screen and (max-width: 900px) {
@@ -134,13 +140,9 @@ header .links a .fa:hover {
         align-items: center;
         justify-content: center;
         transition: all 0.8s ease-in-out;
-        background-color: rgba(255, 255, 255, 0.562);
+        background-color: rgba(173, 171, 171, 0.562);
     }
-    
-    header nav ul li {
-        line-height: 30px;
-    }
-    
+
     header nav ul li.active, header nav ul li:hover {
         border-bottom: none;
     }
@@ -150,8 +152,8 @@ header .links a .fa:hover {
     }
 
     header nav ul li a {
-        font-size: 20px;
-        color: #585858;
+        font-size: 22px;
+        color: #2b2b2b;
     }
 
     header nav label {
@@ -178,10 +180,10 @@ header .links a .fa:hover {
 }
 
 /* #menu1{background-color: red;} */
-#menu2{background-color: blue;}
-#menu3{background-color: yellow;}
-#menu4{background-color: green;}
-#menu5{background-color: blueviolet;}
+#menu2{padding-top: 60px;}
+#menu3{padding-top: 60px; background-color: yellow;}
+#menu4{padding-top: 60px; background-color: green;}
+#menu5{padding-top: 60px; background-color: blueviolet;}
 
 /* Home Styling */
 #menu1 {
@@ -210,7 +212,7 @@ header .links a .fa:hover {
 
 #menu1 .container p span {
     font-size: 45px;
-    color: rgb(117, 117, 117);
+    color: rgb(209, 207, 207);
     font-weight: bold;
 }
 
@@ -231,3 +233,90 @@ header .links a .fa:hover {
 }
 
 /* Home Styling Finished */
+
+/* New In Styling Starts */
+
+#menu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#menu2 .container {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#menu2 .container .picture {
+    min-width: 22%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+}
+
+#menu2 .container .picture .pic {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#menu2 .container .picture .pic img {
+    width: 100%;
+}
+
+#menu2 .container .picture .content {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu2 .container .picture .content p {
+    color: #585858;
+    font-size: 30px;
+    position: relative;
+}
+
+#menu2 .container .picture .new {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fcfcfc;
+    font-weight: bold;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    background-color: blue;
+}
+
+@media screen and (max-width: 1200px) {
+    #menu2 {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    #menu2 .container .picture {
+        height: 50%;
+        min-width: 25%;
+        margin-bottom: 40px;
+    }
+
+    #menu2 .container {
+        width: 75%;
+    }
+}
+
+/* New in styling Finish */
+
