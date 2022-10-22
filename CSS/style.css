@@ -159,7 +159,7 @@ body {
 }
 
 .sidebar a:hover .fa{
-    color: #FFFFFF;
+    color: #8d8d8d;
 }
 
 @media screen and (max-width: 600px) {
