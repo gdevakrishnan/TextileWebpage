@@ -190,7 +190,7 @@ header .links a .fa:hover {
 /* #menu1{background-color: red;} */
 #menu2{padding-top: 60px;}
 #menu3{padding-top: 60px;}
-#menu4{padding-top: 60px; background-color: red;}
+#menu4{padding-top: 60px;}
 #menu5{padding-top: 60px; background-color: blueviolet;}
 
 /* Home Styling */
@@ -333,6 +333,12 @@ header .links a .fa:hover {
     }
 }
 
+@media screen and (max-width: 600px) {
+    #menu2 .container .picture .content p {
+        font-size: 24px;
+    }
+}
+
 /* New in styling Finish */
 
 #menu3 {
@@ -354,7 +360,7 @@ header .links a .fa:hover {
     height: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #menu3 .container .picture {
@@ -363,7 +369,7 @@ header .links a .fa:hover {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     cursor: pointer;
@@ -379,6 +385,7 @@ header .links a .fa:hover {
 
 #menu3 .container .picture .pic img {
     width: 100%;
+    height: 100%;
 }
 
 #menu3 .container .picture .content {
@@ -399,6 +406,7 @@ header .links a .fa:hover {
     #menu3 {
         height: auto;
         padding-top: 100px;
+        padding-bottom: 40px;
     }
 
     #menu3 .container .picture {
@@ -412,5 +420,84 @@ header .links a .fa:hover {
     }
 }
 
+@media screen and (max-width: 600px) {
+    #menu3 .container .picture .content p {
+        font-size: 24px;
+    }
+}
+
 /* Festive wear Finished */
+
 /* collection styling starts */
+
+#menu4 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#menu4 .menu4-title {
+    margin-bottom: 20px;
+}
+
+#menu4 .container {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#menu4 .container .picture {
+    min-width: 300px;
+    height: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#menu4 .container .picture .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: #2b2b2b;
+}
+
+#menu4 .container .picture .content p {
+    font-size: 28px;
+    color: #fcfcfc;
+}
+
+#menu4 .container .picture .pic {
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+
+#menu4 .container .pic1 .pic {background-image: url('../images/wedding-dress.jpeg');}
+#menu4 .container .pic2 .pic {background-image: url('../images/mens-formal.jpg');}
+#menu4 .container .pic3 .pic {background-image: url('../images/mens-casual.jpg');}
+#menu4 .container .pic4 .pic {background-image: url('../images/kids-wear.jpg');}
+
+@media screen and (max-width: 1370px) {
+    #menu4 {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #menu4 .container .picture .content p {
+        font-size: 24px;
+    }
+}
+
+/* Collections Styling is Finished */
