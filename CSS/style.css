@@ -19,144 +19,90 @@ body {
     background-color: #FFFFFF;
     font-family: 'Ubuntu Mono', monospace;
     overflow-x: hidden;
+    position: relative;
 }
 
 /* Header Starts */
-header {
-    width: 100%;
+.nav {
     height: 60px;
+    width: 100%;
+    background-color: #525151;
     display: flex;
-    position: relative;
+    justify-content: space-around;
+    padding: 0px 20px;
     position: fixed;
     top: 0;
-    background-color: #525151;
     z-index: 999;
 }
 
-header nav {
-    width: 85%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    position: relative;
-}
-
-header nav .logo {
+.nav .logo {
+    line-height: 60px;
     font-size: 40px;
-    cursor: pointer;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
-header nav ul {
+.nav ul {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    line-height: 40px;
 }
 
-header nav ul li {
-    padding: 5px 10px;
-    cursor: pointer;
+.nav ul li {
+    margin: 0px 10px;
+    padding: 0px 10px;
+    height: 90%;
+    line-height: 60px;
     transition: all 0.2s ease;
 }
 
-header nav ul li a {
+.nav ul li.active, .nav ul li:hover {
+    border-bottom: 4px solid #FFFFFF;
+}
+
+.nav ul li a {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
-header nav #check {
+#check {
     display: none;
 }
 
-header nav label {
-    font-size: 30px;
+.nav .fa {
     position: absolute;
-    right: 30px;
+    right: 20px;
+    top: 15px;
+    color: #fcfcfc;
+    font-size: 30px;
     cursor: pointer;
     display: none;
 }
 
-header nav label .fa {
-    color: #ffffff;
-}
-
-header .links {
-    width: 15%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    position: absolute;
-    right: 0;
-}
-
-header .links a .fa {
-    font-size: 20px;
-    padding: 5px;
-    color: rgb(206, 203, 203);
-}
-
-header nav ul li.active, header nav ul li:hover {
-    border-bottom: 4px solid rgb(255, 255, 255);
-}
-
-header .links a .fa:hover {
-    color: #ffffff;
-}
-
-@media screen and (max-width: 900px) {
-    header {
-        height: 60px;
-        align-items: center;
-        justify-content: center;
-        display: block;
-    }
-
-    header nav {
-        width: 100%;
-        padding: 5px 0px;
+@media screen and (max-width: 800px) {
+    .nav {
         flex-direction: column;
-        overflow: hidden;
-        height: 100vh;
     }
-    
-    header .logo , header nav label{
-        line-height: 50px;
+
+    .nav .logo {
+        text-align: center;
     }
-    
-    header nav ul {
-        margin: 0;
-        width: 50%;
-        height: 50vh;
+
+    .nav ul {
+        background-color: rgba(212, 212, 212, 0.644);
         flex-direction: column;
         position: absolute;
+        text-align: center;
         top: 60px;
         right: -100%;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.8s ease-in-out;
-        background-color: rgba(173, 171, 171, 0.562);
+        height: 50vh;
+        width: 40%;
+        transition: all 1s ease-in-out;
     }
 
-    header nav ul li.active, header nav ul li:hover {
-        border-bottom: none;
-    }
-
-    header nav ul li:hover a {
-        color: #ffffff;
-    }
-
-    header nav ul li a {
-        font-size: 22px;
-        color: #2b2b2b;
-    }
-
-    header nav label {
+    .nav .fa {
         display: block;
     }
 
@@ -164,10 +110,24 @@ header .links a .fa:hover {
         right: 0;
     }
 
-    header .links {
-        left: 0;
-        top: 0;
-        width: 25%;
+    .nav ul li.active, .nav ul li:hover {
+        border-bottom: none;
+    }
+    
+    .nav ul li a {
+        color: rgb(43, 42, 42);
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .nav ul li:hover a {
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul {
+        width: 50%;
     }
 }
 
