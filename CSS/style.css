@@ -98,7 +98,7 @@ header .links {
 header .links a .fa {
     font-size: 20px;
     padding: 5px;
-    color: #ffffff;
+    color: rgb(206, 203, 203);
 }
 
 header nav ul li.active, header nav ul li:hover {
@@ -106,7 +106,7 @@ header nav ul li.active, header nav ul li:hover {
 }
 
 header .links a .fa:hover {
-    color: rgb(206, 203, 203);
+    color: #ffffff;
 }
 
 @media screen and (max-width: 900px) {
@@ -356,7 +356,7 @@ header .links a .fa:hover {
 }
 
 #menu3 .container {
-    width: 95%;
+    width: 85%;
     height: 80%;
     display: flex;
     flex-wrap: wrap;
