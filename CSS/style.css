@@ -653,4 +653,9 @@ footer p .company {
         font-size: 18px;
         line-height: 40px;
     }
+
+    footer p .fa {
+        font-size: 18px;
+        width: 18px;
+    }
 }
